@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: gray;
+}
+/* Here the navigation section part styling starts from here */
+
+nav {
+  line-height: 80px;
+  width: 100%;
+  background-position: fixed;
+}
+label.logo img {
+  margin-left: 50px;
+  height: 100px;
+}
+nav ul {
+  float: right;
+  padding-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a.active,a:hover {
+  border-bottom: 3px solid yellow;
+  transition: 0.1s;
+}
+.chekbtn {
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+/* styling for the tablet mode view of the website */
+@media (max-width: 953px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  body {
+    background-position: -48px 307px;
+  }
+  .intro {
+    font-size: 25px;
+  }
+  #portfolio .pbox {
+    display: grid;
+  }
+  #skill .pbox {
+    display: grid;
+  }
+}
+/* styling of the mobile mode view of the website  */
+@media (max-width: 858px) {
+  .chekbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(149, 172, 172);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,a.active {
+    background: none;
+    color: black;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .intro {
+    font-size: 20px;
+  }
+  #portfolio .pbox {
+    display: grid;
+  }
+  #skill .pbox {
+    display: grid;
+  }
+}
+
+/* Section 1 Home section of the website stats from here */
+
+#home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  background-image: url(DSC_0003_\(1\)[1]-PhotoRoom.png-PhotoRoom.png);
+  background-repeat: no-repeat;
+  background-position-x: 60%;
+  background-attachment: fixed;
+}
+ @media (max-width: 858px){ */
+  #home{
+    background-image: none;
+    background-position: 0cqmin;
+  }
+} */
+#home button a {
+  color: #ffffff;
+  border-style: none;
+}
+#home .text {
+  font-family: "Libre Baskerville", serif;
+  font-size: 40px;
+  color: rgb(255, 72, 0);
+  text-align: center;
+  font-weight: 900;
+  margin-top: 100px;
+}
+.text button {
+  background-color: rgb(220, 200, 20);
+  padding: 10px 30px;
+  border-radius: 25px;
+  border-style: none;
+}
+
+/* Section 2 Skills section styling starts from here  */
+
+#skill {
+  height: max-content;
+  width: 100vw;
+  text-align: center;
+  padding: 40px;
+}
+#skill .s-text {
+  text-align: center;
+  color: #ffffff;
+}
+#skill .s-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#skill .s1 {
+  margin: 20px;
+  height: 250px;
+  width: 300px;
+  border-radius: 25px;
+  padding: 20px;
+}
+#skill .s1 .pic{
+  font-size: 30px;
+  color: rgb(226, 198, 43);
+}
+
+#skill .s1 .font{
+  color: white;
+  text-align: center;
+}
+
+/* Section 3 styling of the Certification section starts from here  */
+#certification{
+    height: max-content;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+#certification .c-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#certification .s2{
+  margin-top: 30px;
+}
+#certification .s2 .font{
+  color: #ffffff;
+  text-align: center;
+}
+#certification .s2 .pic img{
+  height: 200px;
+  width: 380px;
+}
+.c-text{
+  text-align: center;
+  color: white;
+}
+
+/* Section 4 Styling of the Porfolio section contains project */
+
+#portfolio {
+  height: max-content;
+  width: 100%;
+}
+#portfolio .stext{
+  text-align: center;
+  color: white;
+}
+#portfolio .p-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .s3 {
+  margin: 20px;
+  height: 100pxpx;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+#portfolio .s3 .pic{
+    font-size: 30px;
+    color: crimson;
+}
+#portfolio .s3 .font{
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Section 5 styling of the Curriculum section of the page */
+
+#curriculum {
+  height: max-content;
+  width: 100vw;
+  color: #ffffff;
+}
+#curriculum .curr-text{
+  text-align: center;
+  color: #ffffff;
+}
+.detail {
+  margin: 30px;
+}
+
+
+/*  section 6 Styling of the Footer section of the website  */
+.footer {
+  text-align: center;
+}
+.footer .photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #ffffff;
+  margin: auto;
+  margin-bottom: 25px;
+  background-image: url(DSC_0003_\(1\)[1]-PhotoRoom.png-PhotoRoom.png);
+  background-repeat: no-repeat;
+  background-size: 411px;
+  background-position: -71px -81px;
+}
+.ftext a {
+  font-size: 35px;
+  border-style: none;
+  color:black;
+  margin: 5px;
+}
+.links {
+  text-align: center;
+}
+
+/* section 7 styling of the contact section of the website  */
+
+#contact {
+  height: max-content;
+  width: 100vw;
+  text-align: center;
+  background-image: url(keyboard.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 25px;
+}
+#contact .con-text{
+  color: #ffffff;
+  text-align: center;
+}
+input {
+  height: 45px;
+  width: 80%;
+  padding: 6px;
+  border: none;
+  outline: none;
+}
+textarea {
+  width: 80%;
+  font-size: 15px;
+  padding: 7px;
+  border: none;
+  outline: none;
+}
+ #contact button {
+  background-color: transparent;
+  color: white;
+  font-size: large;
+}
+.links{
+  color: white;
+  font-weight: 900;
+  padding: 10px;
+}
+
